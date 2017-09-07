@@ -12,6 +12,7 @@ struct Constants {
     
     static let emptyString = ""
     static let addEmployee = "AddEmployee"
+    static let applicationName = "CoreDataExample"
 }
 
 

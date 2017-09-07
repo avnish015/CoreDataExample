@@ -50,7 +50,7 @@ class ViewController: NSViewController {
         }
     }
     
-    @IBAction func searchedBarTextDidChange(_ sender: NSSearchField) {
+    @IBAction func searchedFieldTextDidChange(_ sender: NSSearchField) {
         //Searches the table view records as per the given search string based on id, name, contact no.
         let searchString = sender.stringValue
         let predicate = NSPredicate(format: "id contains[c] %@ OR name contains[c] %@ OR contactNumber contains[c] %@", searchString, searchString, searchString)

@@ -444,7 +444,7 @@
                                         </searchFieldCell>
                                     </searchField>
                                     <connections>
-                                        <action selector="searchedBarTextDidChange:" target="Oky-zY-oP4" id="fVG-np-nTD"/>
+                                        <action selector="searchedFieldTextDidChange:" target="Oky-zY-oP4" id="g0i-WP-ROT"/>
                                     </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="SaF-lu-wbg"/>
@@ -701,7 +701,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contactNoTextFiled" destination="lj6-tI-1a8" id="8ml-FD-fRi"/>
+                        <outlet property="contactNoTextField" destination="lj6-tI-1a8" id="JzP-IP-ciB"/>
                         <outlet property="idTextView" destination="n6P-tk-EaQ" id="Cwt-2Z-kSQ"/>
                         <outlet property="nameTextView" destination="JTq-X5-igs" id="2yn-ZF-GGR"/>
                     </connections>

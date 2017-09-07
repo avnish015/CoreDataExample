@@ -12,20 +12,22 @@ class AddEmployeeViewController: NSViewController {
     //MARK:- IBOutlets
     @IBOutlet weak var idTextView: NSTextField!
     @IBOutlet weak var nameTextView: NSTextField!
-    @IBOutlet weak var contactNoTextFiled: NSTextField!
+    @IBOutlet weak var contactNoTextField: NSTextField!
     
     //MARK:- Properties
     let context = (NSApplication.shared().delegate as! AppDelegate).persistentContainer.viewContext
     
+    //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
+    
     //MARK:- IBActions
     @IBAction func addEmployee(_ sender: NSButton) {
-        if contactNoTextFiled.stringValue != Constants.emptyString && nameTextView.stringValue != Constants.emptyString && idTextView.stringValue != Constants.emptyString {
+        if contactNoTextField.stringValue != Constants.emptyString && nameTextView.stringValue != Constants.emptyString && idTextView.stringValue != Constants.emptyString {
             let employee = Employee(context: context)
-            employee.contactNumber = contactNoTextFiled.stringValue
+            employee.contactNumber = contactNoTextField.stringValue
             employee.name = nameTextView.stringValue
             employee.id = idTextView.stringValue
             context.perform {
